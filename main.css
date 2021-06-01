@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: unset;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hand {
+  cursor: pointer;
+  font-size: 5rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 2000ms 500ms;
+}
+
+#hand::selection {
+  background-color: transparent;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #1b1b1b;
+    color: white;
+  }
+}
